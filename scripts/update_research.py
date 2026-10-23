@@ -32,7 +32,8 @@ def get_output_text(response):
 def main():
     api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key:
-        fail("OPENAI_API_KEY repository secret is missing. Add it in Settings > Secrets and variables > Actions.")
+        print("SKIP: OPENAI_API_KEY is not configured. Site deployment can continue, but automated research is not enabled.")
+        return
     current = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     today = datetime.now(timezone.utc).date().isoformat()
     prompt = f"""
