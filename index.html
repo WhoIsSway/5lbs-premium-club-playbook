@@ -94,7 +94,7 @@ async function loadResearchData(){
     }
     const date=esc(research.updated_at||"Not yet updated");
     D.zh.status=D.zh.status.replace(/2026 年 9 月 28 日/g,date);
-    D.en.status=D.en.status.replace(/September 28, 2026/g,date);
+    D.en.status=D.en.status.replace(/28 Sep 2026/g,date);
   }catch(error){console.warn("Could not load research data; using built-in fallback.",error)}
 }
 loadResearchData().finally(()=>setLang(localStorage.getItem("lang")||"zh"));
