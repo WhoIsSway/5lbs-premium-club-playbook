@@ -1,0 +1,73 @@
+name: Research Radar and Publish
+
+on:
+  schedule:
+    # 09:17 China Standard Time on Monday and Thursday (01:17 UTC)
+    - cron: "17 1 * * 1,4"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: premium-club-pages
+  cancel-in-progress: true
+
+jobs:
+  research-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Research update (requires OPENAI_API_KEY secret)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_RESEARCH_MODEL: gpt-4.1
+        run: python scripts/update_research.py
+
+      - name: Commit substantive research changes only
+        run: |
+          if [[ -n "$(git status --porcelain data/research.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/research.json
+            git commit -m "Update premium club research radar"
+            git push origin HEAD:main
+          else
+            echo "No research data changes; no content commit created."
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Deployment summary
+        run: |
+          echo "### +5LBS Premium Club Playbook" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Site deployment completed by this workflow." >> "$GITHUB_STEP_SUMMARY"
+          echo "- Automated research runs only when the OPENAI_API_KEY repository secret is configured." >> "$GITHUB_STEP_SUMMARY"
+          echo "- If no source-backed substantive change is found, the research database is left unchanged." >> "$GITHUB_STEP_SUMMARY"
+          echo "- Published URL: ${{ steps.deployment.outputs.page_url }}" >> "$GITHUB_STEP_SUMMARY"
