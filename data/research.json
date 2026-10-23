@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-10-23",
+  "last_research_run": "2026-10-23",
+  "decision_note": "Initial structured baseline. Planned announcements and unverified claims must remain explicitly labeled until independently checked.",
+  "tracked_brands": [
+    {
+      "name": "Equinox",
+      "scope": "Global anchor benchmark",
+      "status": "ongoing"
+    },
+    {
+      "name": "Third Space",
+      "scope": "Global anchor benchmark",
+      "status": "ongoing"
+    },
+    {
+      "name": "Life Time",
+      "scope": "Global anchor benchmark",
+      "status": "ongoing"
+    },
+    {
+      "name": "The Real Gym",
+      "scope": "China benchmark; verify exact brand/location",
+      "status": "verify_identity"
+    },
+    {
+      "name": "SHARPN TURF",
+      "scope": "China benchmark; keep separate from MASS",
+      "status": "verify_identity"
+    },
+    {
+      "name": "SHARPN MASS",
+      "scope": "China benchmark; keep separate from TURF",
+      "status": "verify_identity"
+    },
+    {
+      "name": "Space / SpaceCycle",
+      "scope": "China benchmark; verify exact entity and current operating status",
+      "status": "verify_identity"
+    }
+  ],
+  "cases": [
+    {
+      "id": "heimat-los-angeles",
+      "brand": "HEIMAT",
+      "city": "Los Angeles, USA",
+      "type": "Luxury fitness and lifestyle club",
+      "core_model": "Members club combining serious training, boutique studios and broader hospitality-style club life.",
+      "target_members": "Premium urban members seeking training plus lifestyle amenities.",
+      "investment_modules": [
+        "Training equipment and coaching",
+        "Boutique studios",
+        "Hospitality and member services"
+      ],
+      "service_mechanism": "Integrated training and club services under one membership proposition.",
+      "community_mechanism": "Member-club environment and shared lifestyle spaces.",
+      "why_it_may_work": "Multiple use cases can increase visit frequency and perceived membership value; validate actual utilization before copying.",
+      "plus5lbs_takeaway": "Study how much hospitality should surround a performance-first club. Prioritize training capability before broad lifestyle expansion.",
+      "avoid_copying": "Do not assume a large luxury footprint or hospitality build-out is appropriate for an urban performance club.",
+      "investment_decision": "Study; selectively build after demand validation",
+      "evidence_status": "baseline_reference_recheck_details",
+      "sources": [
+        {
+          "label": "HEIMAT official club",
+          "url": "https://heimat.com/club/"
+        }
+      ],
+      "last_verified": "2026-10-23"
+    },
+    {
+      "id": "remedy-place-us",
+      "brand": "Remedy Place",
+      "city": "United States",
+      "type": "Social wellness and recovery club",
+      "core_model": "Social wellness positioning around recovery and self-care experiences.",
+      "target_members": "Urban consumers interested in wellness services and shared experiences.",
+      "investment_modules": [
+        "Recovery services",
+        "Sauna and cold exposure",
+        "Member experience and social programming"
+      ],
+      "service_mechanism": "Bookable wellness services with a social-club framing.",
+      "community_mechanism": "Group and social experiences around wellness.",
+      "why_it_may_work": "A shared ritual may make recovery more social and repeatable than isolated equipment use.",
+      "plus5lbs_takeaway": "Test recovery as an add-on to running and strength communities before investing in a full standalone recovery facility.",
+      "avoid_copying": "Do not infer clinical efficacy from brand positioning; assess each modality and its evidence separately.",
+      "investment_decision": "Pilot or partner first",
+      "evidence_status": "baseline_reference_recheck_details",
+      "sources": [
+        {
+          "label": "Remedy Place official website",
+          "url": "https://www.remedyplace.com/"
+        }
+      ],
+      "last_verified": "2026-10-23"
+    }
+  ],
+  "investment_framework": [
+    {
+      "module": "Training hardware and floor plan",
+      "default_decision": "Build core capability",
+      "test": "Utilization, training quality, member outcomes"
+    },
+    {
+      "module": "Coaches and education",
+      "default_decision": "Build in-house",
+      "test": "Coaching consistency, progression, retention"
+    },
+    {
+      "module": "Assessment and programming",
+      "default_decision": "Build the service logic; partner for specialist tests",
+      "test": "Does data change the program and improve follow-through?"
+    },
+    {
+      "module": "Recovery",
+      "default_decision": "Pilot or partner before large capex",
+      "test": "Repeat usage, attachment to training, member willingness to pay"
+    },
+    {
+      "module": "Health/medical services",
+      "default_decision": "Partner",
+      "test": "Qualifications, referral quality, clear scope and governance"
+    },
+    {
+      "module": "Changing rooms and showers",
+      "default_decision": "Build reliable premium basics",
+      "test": "Cleanliness, peak-time experience, member feedback"
+    },
+    {
+      "module": "Nutrition and cafe",
+      "default_decision": "Pilot or partner",
+      "test": "Demand by time of day, margin and repeat purchase"
+    },
+    {
+      "module": "Digital product",
+      "default_decision": "Build only around a defined member job",
+      "test": "Training adherence and retention, not app downloads"
+    },
+    {
+      "module": "Community and events",
+      "default_decision": "Build a repeatable calendar",
+      "test": "Participation, return frequency, referrals"
+    },
+    {
+      "module": "Retail, office, family and large social spaces",
+      "default_decision": "Defer until demand is evidenced",
+      "test": "Incremental value relative to space and operating complexity"
+    }
+  ],
+  "research_log": [
+    {
+      "date": "2026-10-23",
+      "title": "Structured research baseline created",
+      "summary": "Separated core tracking list, initial adjacent-model references and investment decision framework from static page code. Automatic research ingestion requires OPENAI_API_KEY repository secret."
+    }
+  ]
+}
