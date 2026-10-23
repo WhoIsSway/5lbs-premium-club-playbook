@@ -67,5 +67,35 @@ radar:[["HEIMAT / Los Angeles","Luxury fitness + living well","A 75,000 sq ft me
 logs:[["2026-09-28","v0.2: bilingual Chinese/English switch added. Anchor benchmarks remain Equinox / Third Space / Life Time, with the first investment map and HEIMAT / Remedy Place radar."],["Next","Deepen membership architecture, flagship formats, service journeys, operating complexity and Shanghai/Asia relevance. Convert evidence into +5LBS-specific product decisions."]]
 }};
 function setLang(lang){const d=D[lang];document.documentElement.lang=lang==="zh"?"zh-CN":"en";localStorage.setItem("lang",lang);document.querySelectorAll("[data-t]").forEach(x=>x.innerHTML=d[x.dataset.t]);document.getElementById("flow").innerHTML=d.flow.map(x=>"<span>"+x+"</span>").join("");document.getElementById("benchGrid").innerHTML=d.bench.map(x=>'<div class="card"><div class="tag">'+x[0]+'</div><h3>'+x[1]+'</h3><p>'+x[2]+'</p><div class="bottom">'+x[3]+"</div></div>").join("");document.getElementById("investGrid").innerHTML=d.invest.map(x=>'<div><div class="tag">'+x[0]+'</div><h3>'+x[1]+'</h3><p>'+x[2]+"</p></div>").join("");document.getElementById("journeyTable").innerHTML=d.journey.map((r,i)=>"<tr>"+r.map(c=>i===0?"<th>"+c+"</th>":"<td>"+c+"</td>").join("")+"</tr>").join("");document.getElementById("radarGrid").innerHTML=d.radar.map(x=>'<div class="card"><div class="tag">'+x[0]+'</div><h3>'+x[1]+'</h3><p>'+x[2]+'</p><div class="bottom">'+x[3]+"</div></div>").join("");document.getElementById("logs").innerHTML=d.logs.map(x=>'<div class="log"><strong>'+x[0]+"</strong><div>"+x[1]+"</div></div>").join("");document.getElementById("zh").classList.toggle("active",lang==="zh");document.getElementById("en").classList.toggle("active",lang==="en")}
-setLang(localStorage.getItem("lang")||"zh");
+function esc(value){return String(value??"").replace(/[&<>"']/g,function(ch){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]})}
+async function loadResearchData(){
+  try{
+    const response=await fetch("./data/research.json?ts="+Date.now(),{cache:"no-store"});
+    if(!response.ok) throw new Error("research.json unavailable");
+    const research=await response.json();
+    const cases=Array.isArray(research.cases)?research.cases:[];
+    const toCard=(c,lang)=>{
+      const name=esc(c.brand||c.id);
+      const city=esc(c.city||"");
+      const type=esc(c.type||"");
+      const description=lang==="zh"
+        ? esc(c.core_model||"")+" 目标会员："+esc(c.target_members||"")+"。值得投入："+esc((c.investment_modules||[]).join("、"))+"。服务机制："+esc(c.service_mechanism||"")+"。社群机制："+esc(c.community_mechanism||"")+"。"
+        : esc(c.core_model||"")+" Target members: "+esc(c.target_members||"")+". Investment modules: "+esc((c.investment_modules||[]).join(", "))+". Service: "+esc(c.service_mechanism||"")+". Community: "+esc(c.community_mechanism||"")+".";
+      const takeaway=lang==="zh"?"+5LBS 借鉴："+esc(c.plus5lbs_takeaway||"")+" 不应照搬："+esc(c.avoid_copying||"")+" 投入判断："+esc(c.investment_decision||"")+"。":"For +5LBS: "+esc(c.plus5lbs_takeaway||"")+" Avoid copying: "+esc(c.avoid_copying||"")+" Investment: "+esc(c.investment_decision||"")+".";
+      const links=(c.sources||[]).filter(s=>s&&typeof s.url==="string"&&s.url.startsWith("https://")).map(s=>'<a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.label||"Source")+'</a>').join(" · ");
+      return [name+" / "+city,type,description,takeaway+(links?"<br><span class='source'>"+links+"</span>":"")];
+    };
+    D.zh.radar=cases.map(c=>toCard(c,"zh"));
+    D.en.radar=cases.map(c=>toCard(c,"en"));
+    const logs=Array.isArray(research.research_log)?research.research_log:[];
+    if(logs.length){
+      D.zh.logs=logs.map(x=>[esc(x.date||""),esc((x.title||"研究更新")+"："+(x.summary||""))]);
+      D.en.logs=logs.map(x=>[esc(x.date||""),esc((x.title||"Research update")+": "+(x.summary||""))]);
+    }
+    const date=esc(research.updated_at||"Not yet updated");
+    D.zh.status=D.zh.status.replace(/2026 年 9 月 28 日/g,date);
+    D.en.status=D.en.status.replace(/September 28, 2026/g,date);
+  }catch(error){console.warn("Could not load research data; using built-in fallback.",error)}
+}
+loadResearchData().finally(()=>setLang(localStorage.getItem("lang")||"zh"));
 </script></body></html>
