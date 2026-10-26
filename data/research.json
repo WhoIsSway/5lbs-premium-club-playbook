@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-23",
-  "last_research_run": "2026-10-23",
-  "decision_note": "Initial structured baseline. Planned announcements and unverified claims must remain explicitly labeled until independently checked.",
+  "updated_at": "2026-10-26",
+  "last_research_run": "2026-10-26",
+  "decision_note": "Added four source-linked cases: Life Time Lakewood Ranch (operating), ARKHE Dubai (operating), Waldorf Astoria Kuala Lumpur (announced; opening pending) and Goldfinger Track Club (running membership). Opening status, evidence limits and build/partner/defer choices explicitly separated.",
   "tracked_brands": [
     {
       "name": "Equinox",
@@ -94,6 +94,133 @@
         }
       ],
       "last_verified": "2026-10-23"
+    },
+    {
+      "id": "lifetime-lakewood-ranch-2026",
+      "brand": "Life Time Lakewood Ranch",
+      "city": "Sarasota / Lakewood Ranch, Florida, USA",
+      "type": "Athletic Country Club / family, sport and lifestyle destination",
+      "core_model": "Opened 2026-10-12; over 180,000 sq ft across 86,000-sq-ft club, ~50,000-sq-ft beach club and ~50,000-sq-ft pickleball retreat; 14 pickleball courts and integrated training, recovery, hospitality, coworking and childcare.",
+      "target_members": "Affluent suburban households and multi-generational families seeking sport, leisure, work and wellness in one destination.",
+      "investment_modules": [
+        "Cardio/strength and dedicated group studios",
+        "Rejuvenation suites with sauna/steam/cold plunge",
+        "Family programming and supervised childcare",
+        "Pickleball and aquatic facilities",
+        "LifeCafe, coworking lounge and spa"
+      ],
+      "service_mechanism": "Combines personal training, group classes, recovery, chiropractic clinic, cafe, coworking and Kids Academy; member app and athletic events extend service beyond the site.",
+      "community_mechanism": "Family recreation, 14 pickleball courts, pool/beach social areas and club events create repeatable non-gym reasons to visit.",
+      "why_it_may_work": "Bundling multiple household activities can increase use cases, convenience and perceived membership value; specific retention and economics are not disclosed.",
+      "plus5lbs_takeaway": "Build the service logic of a daily-life club: good changing/recovery fundamentals, member lounge, events and a testable family-friendly schedule. Treat sport and childcare as conditional demand-driven modules.",
+      "avoid_copying": "Do not copy the 180,000-sq-ft destination scale, beach club, 14 courts or full Kids Academy into a dense urban flagship without proven local demand and site economics.",
+      "investment_decision": "Build core training and service; partner or pilot family/sports extensions; defer resort-scale amenities.",
+      "evidence_status": "High for opening, floor areas and announced facilities (official 2026-10-12 release); low for long-term retention or financial outcomes.",
+      "sources": [
+        {
+          "label": "Life Time investor relations release, 2026-10-12",
+          "url": "https://ir.lifetime.life/news-events/press-releases/detail/1236/life-time-opens-more-than-180000-square-foot-athletic-country-club-in-lakewood-ranch-on-oct-12"
+        }
+      ],
+      "last_verified": "2026-10-26"
+    },
+    {
+      "id": "arkhe-dubai-marina-2026",
+      "brand": "ARKHE",
+      "city": "Dubai Marina, Dubai, UAE",
+      "type": "Performance & recovery club / integrated longevity partnership",
+      "core_model": "Operating performance wellness club integrating strength and HYROX training, classes, recovery, health diagnostics and a work/social cafe within tiered memberships.",
+      "target_members": "Performance-focused urban professionals, HYROX participants and members seeking integrated recovery and health insights.",
+      "investment_modules": [
+        "Performance gym floor and HYROX outdoor zone",
+        "Strength, running and small-group coaching",
+        "Cold plunge, saunas, compression and other recovery modalities",
+        "Health assessment through LONGEVITY-UK partner",
+        "The Circle cafe/coworking and membership app"
+      ],
+      "service_mechanism": "All published tiers include gym and recovery; higher tiers add unlimited group classes or Reformer sessions; personal training and longevity diagnostics are additional service layers.",
+      "community_mechanism": "The Circle lounge/cafe, HYROX group training, events and guest passes create shared participation and member connections.",
+      "why_it_may_work": "Clear differentiation between access, coached classes and premium specialty services can support upgrades; no independent utilization or retention data yet.",
+      "plus5lbs_takeaway": "Study three-layer membership architecture: train + basic recovery; coached performance; optional professional assessment. Build coaching, partner for specialist medical/diagnostic work and pilot recovery utilization.",
+      "avoid_copying": "Do not assume unlimited hyperbaric oxygen, cryotherapy or red-light access has proven training benefit or economic sustainability; evaluate safety, evidence and service capacity separately.",
+      "investment_decision": "Build coaching and training; partner clinical diagnostics; pilot recovery, defer advanced modalities pending evidence.",
+      "evidence_status": "High for official listed facilities, membership tiers and operating claim; medium for service delivery; low for independently verified performance/health benefits.",
+      "sources": [
+        {
+          "label": "ARKHE official club site, accessed 2026-10-26",
+          "url": "https://www.arkhe.club/"
+        },
+        {
+          "label": "ARKHE official membership, accessed 2026-10-26",
+          "url": "https://www.arkhe.club/membership/"
+        },
+        {
+          "label": "What's On Dubai report, 2026-07-20",
+          "url": "https://whatson.ae/2026/07/inside-arkhe-dubais-new-all-in-one-wellness-performance-club/"
+        }
+      ],
+      "last_verified": "2026-10-26"
+    },
+    {
+      "id": "waldorf-astoria-kuala-lumpur-wellness-2026",
+      "brand": "Waldorf Astoria Kuala Lumpur",
+      "city": "Kuala Lumpur, Malaysia",
+      "type": "Hotel x wellness membership / recovery and performance services",
+      "core_model": "Hotel wellness concept announced 2026-10-04, planned to open 2026-10-30: over 2,275 sq m across two floors, combining spa, fitness, recovery, visiting specialists and private wellness memberships.",
+      "target_members": "Luxury hotel guests and affluent local residents seeking a long-term premium wellness relationship.",
+      "investment_modules": [
+        "AlterG anti-gravity treadmill and Technogym Biostrength",
+        "Posture analysis and specialist fitness consultations",
+        "Hydrothermal spa and recovery technology",
+        "Masters in Residence experts",
+        "Family wellness programming and hotel-suite wellness details"
+      ],
+      "service_mechanism": "Planned private Wellness Membership plus visiting expert consultations, tailored programs and hotel-guest access.",
+      "community_mechanism": "Workshops, specialist residencies and family experiences; social and nature-connection pillars are announced but not yet independently evaluated.",
+      "why_it_may_work": "Hospitality assets and visiting specialists can extend a hotel into local repeat memberships; not yet proven because the venue has not opened as of 2026-10-26.",
+      "plus5lbs_takeaway": "Consider rotating expert-in-residence collaborations, periodic athlete assessment days and hotel partnerships for race-weekend recovery rather than owning every specialist service.",
+      "avoid_copying": "Do not build hotel-scale spa, high-cost medical-style technologies or full family programming based on an untested pre-opening concept.",
+      "investment_decision": "Partner for visiting specialists and medical assessments; pilot workshops; defer hotel-scale spa and specialized hardware.",
+      "evidence_status": "High for official 2026-10-04 announced plans; operating status and member uptake unverified before scheduled 2026-10-30 opening.",
+      "sources": [
+        {
+          "label": "Hilton official release, 2026-10-04",
+          "url": "https://stories.hilton.com/releases/waldorf-astoria-kuala-lumpur-introduces-integrated-urban-wellness-sanctuary"
+        }
+      ],
+      "last_verified": "2026-10-26"
+    },
+    {
+      "id": "goldfinger-track-club-nyc-2026",
+      "brand": "Goldfinger Track Club",
+      "city": "New York City, New York, USA",
+      "type": "Community-led running club / coached training and partner-benefit membership",
+      "core_model": "Established running community with 2026 paid memberships bundling training sessions, races, partner discounts, limited race-bib opportunities and a club singlet; separate private coaching and marathon plans.",
+      "target_members": "Urban runners seeking structured group sessions, community identity, race access and training progression.",
+      "investment_modules": [
+        "Specialist running coach and weekly programming",
+        "Race calendar and member-only participation",
+        "Partner benefits and member apparel",
+        "Digital scheduling and training-plan content"
+      ],
+      "service_mechanism": "Official 2026 site lists annual membership billed $55/month, solidarity membership $400/year, and private coaching $255/month with additional race-specific plans.",
+      "community_mechanism": "Three weekly practices, community events, race participation, sponsor partnerships and a solidarity tier supporting member access.",
+      "why_it_may_work": "Recurring practice plus identity, partner perks and event access may create a durable reason to belong even without owning an expensive facility; actual retention not disclosed.",
+      "plus5lbs_takeaway": "Build a runner/road-to-trail training calendar and club identity with coach-led sessions, race services and partner perks. Keep private coaching and race-specific plans separately priced.",
+      "avoid_copying": "Do not assume a community-led club membership price or sponsorship terms transfer directly to a premium full-service gym; verify rights to race bibs and brand partnerships.",
+      "investment_decision": "Build coaching and community; partner events, retail and race services; defer dedicated track/venue until participation proves demand.",
+      "evidence_status": "High for current official membership offer; low for member retention, partner conversion and business economics.",
+      "sources": [
+        {
+          "label": "Goldfinger Track Club official 2026 membership, accessed 2026-10-26",
+          "url": "https://gftcnyc.com/membership"
+        },
+        {
+          "label": "Goldfinger Track Club official site, accessed 2026-10-26",
+          "url": "https://gftcnyc.com/"
+        }
+      ],
+      "last_verified": "2026-10-26"
     }
   ],
   "investment_framework": [
@@ -149,6 +276,11 @@
     }
   ],
   "research_log": [
+    {
+      "date": "2026-10-26",
+      "title": "Four verified additions: athletic country club, performance/recovery, hotel wellness and running community",
+      "summary": "Official evidence added for Life Time Lakewood Ranch, ARKHE Dubai, Waldorf Astoria Kuala Lumpur (planned opening 2026-10-30), and Goldfinger Track Club. Evidence and investment caveats preserved."
+    },
     {
       "date": "2026-10-23",
       "title": "Structured research baseline created",
