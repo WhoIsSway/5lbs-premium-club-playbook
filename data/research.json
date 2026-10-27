@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-26",
+  "updated_at": "2026-10-27",
   "last_research_run": "2026-10-26",
-  "decision_note": "Added four source-linked cases: Life Time Lakewood Ranch (operating), ARKHE Dubai (operating), Waldorf Astoria Kuala Lumpur (announced; opening pending) and Goldfinger Track Club (running membership). Opening status, evidence limits and build/partner/defer choices explicitly separated.",
+  "decision_note": "Expanded the case library to include previously discussed Sweat and Tonic Yorkville, ON//X Performance Club, Triplebond and RECO HQ. Announced/planned concepts remain explicitly labelled; operating results are not inferred.",
   "tracked_brands": [
     {
       "name": "Equinox",
@@ -221,6 +221,123 @@
         }
       ],
       "last_verified": "2026-10-26"
+    },
+    {
+      "id": "sweat-and-tonic-yorkville-2026",
+      "brand": "Sweat and Tonic Yorkville",
+      "city": "Yorkville, Toronto, Canada",
+      "type": "Boutique fitness / strength training / wellness",
+      "core_model": "Announced a new club for opening on 2026-11-21 with approximately 1,672 sq m and about 300 weekly classes; a 48-position strength studio with Rogue and Keiser equipment, plus cycling, yoga, Pilates, recovery and a lounge/coworking offer.",
+      "target_members": "Urban members seeking coached group training, variety, recovery and a social club environment.",
+      "investment_modules": [
+        "Small-group strength programming",
+        "Rogue and Keiser strength equipment",
+        "Digital coaching screens",
+        "Changing-room recovery amenities",
+        "Flexible lounge, coworking and member events"
+      ],
+      "service_mechanism": "Planned high-volume timetable combining several boutique formats; strength training divided into 12 pods with instructor-led delivery.",
+      "community_mechanism": "Founding membership, group classes, lounge and events are designed to support repeat visits and social connection.",
+      "why_it_may_work": "Standardized coached strength can productize resistance training and support schedule density; early presale interest is not proof of retention.",
+      "plus5lbs_takeaway": "Test a 6–12 person progressive strength product before scaling capacity. Prioritize programming, coach standards and training quality over headline class size.",
+      "avoid_copying": "Do not assume 48-person classes preserve individual coaching quality or transfer to +5LBS floor size and member expectations.",
+      "investment_decision": "Build strength programming; pilot small-group capacity; selectively add digital coaching and recovery.",
+      "evidence_status": "High for announced facilities and planned opening (brand press release, 2026-10-21); operating performance not yet verified.",
+      "sources": [
+        {
+          "label": "Sweat and Tonic official press release, 2026-10-21",
+          "url": "https://www.sweatandtonic.com/"
+        }
+      ],
+      "last_verified": "2026-10-26"
+    },
+    {
+      "id": "onx-performance-club-las-vegas-2026",
+      "brand": "ON//X Performance Club",
+      "city": "Las Vegas, Nevada, USA",
+      "type": "Performance club / recovery / social wellness",
+      "core_model": "Announced performance-first club concept of approximately 4,738 sq m, with approximately 3,252 sq m allocated to training (about 69% by the announced areas), supported by recovery, wellness partnerships, nutrition cafe and lounge.",
+      "target_members": "Performance-focused urban members seeking serious training with recovery and lifestyle services.",
+      "investment_modules": [
+        "Strength and performance training floor",
+        "Coaching and programming",
+        "Recovery services",
+        "Partner-delivered wellness/medical services",
+        "Nutrition cafe",
+        "Work and social lounge"
+      ],
+      "service_mechanism": "Training is positioned as the primary visit reason; recovery and services are integrated as extensions.",
+      "community_mechanism": "Lounge and shared services are intended to support connection beyond workouts.",
+      "why_it_may_work": "A training-first space allocation protects core product capacity while adjacent services extend member utility; actual utilization and economics are not yet public.",
+      "plus5lbs_takeaway": "Treat training area as the anchor and size support functions to demonstrated member demand. Test space ratios against utilization rather than copying the announced 69%.",
+      "avoid_copying": "Do not copy the space ratio or full service stack without verified local demand, operating data and site constraints.",
+      "investment_decision": "Build core training; partner specialist services; pilot lounge/cafe and recovery.",
+      "evidence_status": "High for announced project plans; opening and operating outcomes require re-verification.",
+      "sources": [
+        {
+          "label": "ON//X official club site",
+          "url": "https://www.onxperformance.club/"
+        }
+      ],
+      "last_verified": "2026-10-26"
+    },
+    {
+      "id": "triplebond-london-2026",
+      "brand": "Triplebond",
+      "city": "The BoTree, Marylebone, London, UK",
+      "type": "Hotel x social wellness x performance/recovery membership",
+      "core_model": "Wellness membership concept combining bookable training, recovery, social space and hotel hospitality. Published membership tiers include Social, Wellness and Wellness+ with included Wellness Wallet credits.",
+      "target_members": "Affluent urban members and hotel-adjacent customers seeking curated wellness and social experiences.",
+      "investment_modules": [
+        "Bookable recovery and wellness services",
+        "Tiered membership",
+        "Included service credits / wallet",
+        "Hotel partnership",
+        "Social space and member events"
+      ],
+      "service_mechanism": "Tiered membership links monthly dues to varying access and service credits; credit restrictions and service capacity must be understood.",
+      "community_mechanism": "Social space, curated experiences and hotel setting create reasons to visit beyond exercise.",
+      "why_it_may_work": "Included credits may make service use easier and distinguish tiers by actual value rather than status alone; retention effects not independently verified.",
+      "plus5lbs_takeaway": "Test a simple allowance of included assessment/recovery/class credits in premium tiers, with clear expiry, capacity and fulfilment rules.",
+      "avoid_copying": "Do not launch complex wallet/credit mechanics until unit costs, redemption, unused balance, liability and member comprehension are modelled.",
+      "investment_decision": "Pilot tiered included services; partner hospitality and specialists; defer complex wallet mechanics until tested.",
+      "evidence_status": "Medium-high for published membership offer and concept; independent member retention and profitability are not public.",
+      "sources": [
+        {
+          "label": "The BoTree / Triplebond official information",
+          "url": "https://www.thebotree.com/triple-bond/"
+        }
+      ],
+      "last_verified": "2026-10-26"
+    },
+    {
+      "id": "reco-hq-london-2026",
+      "brand": "RECO HQ",
+      "city": "Wandsworth Town, London, UK",
+      "type": "Social recovery club / running community",
+      "core_model": "Announced recovery club concept organised around Heat, Cold, Restore, Refuel & Connect, with sauna, cold plunge, hot pool, compression and other recovery modalities plus cafe/social space and a weekly community run.",
+      "target_members": "Runners and urban wellness consumers seeking recovery rituals and social connection.",
+      "investment_modules": [
+        "Sauna and cold exposure",
+        "Compression and other recovery modalities",
+        "Cafe and social area",
+        "Weekly community run",
+        "Bookable recovery services"
+      ],
+      "service_mechanism": "Planned bookable recovery offerings with membership and pay-as-you-go options.",
+      "community_mechanism": "A weekly run returns to the recovery venue, linking community acquisition to post-run service use.",
+      "why_it_may_work": "A recurring sports ritual can create a natural use case for recovery and bring community into a service space; concept still requires operating validation.",
+      "plus5lbs_takeaway": "Pilot post-run recovery bookings and partnerships before building a standalone recovery club.",
+      "avoid_copying": "Do not infer clinical benefits from the service menu; assess each modality's evidence, safety and actual demand separately.",
+      "investment_decision": "Partner or pilot recovery; build repeatable community run; defer expensive standalone build-out.",
+      "evidence_status": "Medium for announced concept and planned programming; opening and outcomes need verification.",
+      "sources": [
+        {
+          "label": "RECO HQ official website",
+          "url": "https://recohq.com/"
+        }
+      ],
+      "last_verified": "2026-10-26"
     }
   ],
   "investment_framework": [
@@ -276,6 +393,11 @@
     }
   ],
   "research_log": [
+    {
+      "date": "2026-10-27",
+      "title": "Playbook upgraded to interactive bilingual workspace; historical case discussions consolidated",
+      "summary": "Rebuilt the site with navigation, search/filtering, expandable case details, global anchors, China identity-verification records, investment decisions, member journey, module map, evidence register and research log. Added previously discussed Sweat and Tonic Yorkville, ON//X, Triplebond and RECO HQ to the structured case library; planned concepts remain marked as unverified operating outcomes."
+    },
     {
       "date": "2026-10-26",
       "title": "Four verified additions: athletic country club, performance/recovery, hotel wellness and running community",
