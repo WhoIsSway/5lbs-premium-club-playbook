@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-27",
-  "last_research_run": "2026-10-26",
-  "decision_note": "Expanded the case library to include previously discussed Sweat and Tonic Yorkville, ON//X Performance Club, Triplebond and RECO HQ. Announced/planned concepts remain explicitly labelled; operating results are not inferred.",
+  "updated_at": "2026-10-29",
+  "last_research_run": "2026-10-29",
+  "decision_note": "Material additions: Equinox Terminal Warehouse (showroom open, club planned Nov 10); Third Space Queen's Park (official now open, coach academy and detailed amenities); Life Time DUPR app integration; SHARPN BlackTurf official program identity with current operation pending; historical SpaceCycle mainland closure and prepaid-liability lessons. Avoid conflating planned/open and current/historical operating status.",
   "tracked_brands": [
     {
       "name": "Equinox",
@@ -21,13 +21,13 @@
     },
     {
       "name": "The Real Gym",
-      "scope": "China benchmark; verify exact brand/location",
-      "status": "verify_identity"
+      "scope": "Beijing Olympic Sports Center THE REAL GYM is a candidate based on public user content; exact intended reference and current services remain to verify",
+      "status": "candidate_identity_needs_confirmation"
     },
     {
       "name": "SHARPN TURF",
-      "scope": "China benchmark; keep separate from MASS",
-      "status": "verify_identity"
+      "scope": "SHARPN BlackTurf official Beijing athlete-style team conditioning brand; current operating venue unverified; keep separate from MASS",
+      "status": "brand_identity_confirmed_current_venue_unverified"
     },
     {
       "name": "SHARPN MASS",
@@ -36,8 +36,8 @@
     },
     {
       "name": "Space / SpaceCycle",
-      "scope": "China benchmark; verify exact entity and current operating status",
-      "status": "verify_identity"
+      "scope": "SpaceCycle mainland China historical case: 2024 closure/liquidation reported by Jiemian; do not present as current operating competitor; Taiwan entity not assessed.",
+      "status": "historical_mainland_closure_reported"
     }
   ],
   "cases": [
@@ -338,6 +338,167 @@
         }
       ],
       "last_verified": "2026-10-26"
+    },
+    {
+      "id": "equinox-terminal-warehouse-nyc-2026",
+      "brand": "Equinox Terminal Warehouse",
+      "city": "West Chelsea, New York City, USA",
+      "type": "Destination-tier luxury performance club / strength x recovery",
+      "core_model": "Restored 1891 landmark at 261 11th Avenue. Official showroom is open; Athletech News reported planned club opening November 10, 2026. Integrates a reported 7,000-sq-ft strength floor, PGX functional-strength/HIIT circuits, dedicated Reformer Pilates, sauna/steam/cold showers, retail, member lounge and digital EQX+ content.",
+      "target_members": "Premium urban professionals and serious strength/hybrid trainees seeking a higher-performance club and elevated service environment.",
+      "investment_modules": [
+        "Strength floor with Olympic platforms and functional training equipment",
+        "PGX team-based circuits",
+        "Dedicated Reformer Pilates studio",
+        "Contrast therapy sauna, steam and cold showers",
+        "Premium changing/shower experience",
+        "Member lounge, coworking and curated retail",
+        "Digital EQX+ content"
+      ],
+      "service_mechanism": "Performance-first training plus instructor-led classes and recovery; club-specific access/membership terms need confirmation. Brand's own page lists showroom open, not full club operation.",
+      "community_mechanism": "Team-based PGX circuits, classes and shared lounge are intended to create repeated coached interaction; no independently verified retention outcomes.",
+      "why_it_may_work": "A differentiated high-performance destination can give advanced members a clear reason to choose or upgrade club access; the integrated training-to-recovery journey may increase perceived utility. This is a hypothesis, not observed economics.",
+      "plus5lbs_takeaway": "Study training-floor capacity and coach-led hybrid strength as a destination product. Prioritize serious strength equipment, programming and recovery-adjacent changing; evaluate dedicated Pilates and social space against utilization.",
+      "avoid_copying": "Do not copy landmark renovation, destination-tier pricing or large footprint without demand and operational proof. Equinox's recovery marketing claims are not independent clinical evidence.",
+      "investment_decision": "Build strength/coaching core; pilot PGX-style hybrid circuits and recovery; partner or selectively build Pilates; defer destination-scale footprint.",
+      "evidence_status": "High for official club features/showroom; medium for 7,000-sq-ft floor and Nov 10 planned opening (industry report dated 2026-10-09); full operation not confirmed as of 2026-10-29.",
+      "sources": [
+        {
+          "label": "Equinox Terminal Warehouse official club page, accessed 2026-10-29",
+          "url": "https://www.equinox.com/clubs/new-york/midtown/terminal-warehouse"
+        },
+        {
+          "label": "Athletech News, 2026-10-09",
+          "url": "https://athletechnews.com/equinox-high-performance-club-nyc-chelsea-terminal-warehouse/"
+        }
+      ],
+      "last_verified": "2026-10-29"
+    },
+    {
+      "id": "third-space-queens-park-london-2026",
+      "brand": "Third Space Queen's Park",
+      "city": "Queen's Park, London, UK",
+      "type": "Luxury health club / HYROX x strength x recovery x coaching academy",
+      "core_model": "Official club page now states 'Now Open'. Three-level light-filled club with two-level training floor, Eleiko strength zone, Woodway treadmills, two-lane sled track, dedicated HYROX studio, 19-place Reformer studio, 27-place Mind & Body studio, 24-place Hot Yoga, recovery zone, 25-person hydropool, 19-person sauna, 17-person steam room, changing rooms and member lounge.",
+      "target_members": "Affluent urban residents seeking high-quality training, classes, specialist coaching, recovery and a convenient premium daily routine.",
+      "investment_modules": [
+        "Strength/functional training floor and dedicated HYROX zone",
+        "Coach education and progression system",
+        "19-place Reformer Pilates studio and other specialized studios",
+        "Recovery zone with Normatec and Hyperice",
+        "Wet spa and premium changing rooms",
+        "Optional wash/dry/fold and monthly locker rental",
+        "Quiet member lounge"
+      ],
+      "service_mechanism": "Official site describes personal trainers with minimum 2,500 session hours, at least five internal academy education days annually and a three-year PT development journey; Elite PT category lists 10,000+ hours. Published Queen's Park club-only membership £265, Group £299, Group Plus £345, subject to joining fees and access terms as shown on 2026-10-29.",
+      "community_mechanism": "HYROX and group classes create shared training goals; member lounge supports quiet focus and social interaction. Membership access is tiered by club network.",
+      "why_it_may_work": "Coach quality standards and progression can be a more durable premium differentiator than surface finishes; differentiated studios and changing services create tangible member value. Independent utilization and retention data are not public.",
+      "plus5lbs_takeaway": "Prioritize coach hiring standards, internal academy and progression tiers; design functional training and HYROX for serious users. Benchmark premium changing, towels and optional laundry/locker services. Pilot recovery before committing to a large wet spa.",
+      "avoid_copying": "Do not assume a 25-person hydropool, large wet spa or numerous dedicated studios fit +5LBS space, demand or operating complexity. Site copy describing recovery benefits is promotional, not independent medical evidence.",
+      "investment_decision": "Build coach academy and training core; selectively build changing-service excellence; pilot recovery and studio formats; defer large wet spa pending demand.",
+      "evidence_status": "High for current official 'Now Open' status, published facilities, training credentials and membership tiers (accessed 2026-10-29); independent member outcomes and service quality remain unverified.",
+      "sources": [
+        {
+          "label": "Third Space Queen's Park official club page, accessed 2026-10-29",
+          "url": "https://www.thirdspace.london/clubs/queens-park/"
+        }
+      ],
+      "last_verified": "2026-10-29"
+    },
+    {
+      "id": "lifetime-dupr-digital-member-product-2026",
+      "brand": "Life Time × DUPR",
+      "city": "United States and Canada (Life Time pickleball clubs)",
+      "type": "Digital member product / skill-based community matchmaking",
+      "core_model": "On October 21, 2026 Life Time announced completed integration of Dynamic Universal Pickleball Rating (DUPR) into its app across all clubs offering pickleball. Members can link their rating to club membership, track progress, find level-matched partners and join rating-gated or open-level leagues/play.",
+      "target_members": "Pickleball members seeking appropriate competition, measurable improvement and more convenient repeat participation.",
+      "investment_modules": [
+        "Member app integration with external sport-rating system",
+        "Level-matched class, league and partner discovery",
+        "Progress visibility and booking flow",
+        "Coach-led skill assessment and community moderation",
+        "Repeatable event and league calendar"
+      ],
+      "service_mechanism": "Existing Life Time member ID links to DUPR; rating appears alongside court booking tools; clubs can offer rating-gated Open Play as well as non-rated formats, with pros available to guide members.",
+      "community_mechanism": "Skill-matched leagues and open play reduce coordination friction, help newcomers find compatible peers and give advanced players measurable progression.",
+      "why_it_may_work": "A verified ability signal can improve matching, fairness and repeat use of existing facilities. Business impact is not yet independently disclosed.",
+      "plus5lbs_takeaway": "Apply the principle to running/strength: ability and goals -> appropriate coach, training group, challenge or race prep. Pilot simple levels, opt-in profiles and coach validation before investing in custom scoring software.",
+      "avoid_copying": "Do not build a proprietary rating system without critical mass or sport-specific validity. Avoid excluding beginners and respect consent/privacy for member performance data.",
+      "investment_decision": "Partner or integrate existing validated ratings; build member journeys and coach matching; pilot level-based groups before custom software.",
+      "evidence_status": "High for official announced completed rollout and product features (Life Time release 2026-10-21); retention or commercial lift not publicly verified.",
+      "sources": [
+        {
+          "label": "Life Time official release, 2026-10-21",
+          "url": "https://ir.lifetime.life/news-events/press-releases/detail/1239/life-time-makes-it-easier-for-members-to-find-competitive-matches-with-dupr-in-app-integration"
+        }
+      ],
+      "last_verified": "2026-10-29"
+    },
+    {
+      "id": "sharpn-blackturf-beijing-reference",
+      "brand": "SHARPN BlackTurf (TURF)",
+      "city": "Chaowai SOHO, Beijing, China (official site address; current operations unverified)",
+      "type": "Athlete-style group conditioning / team-based training",
+      "core_model": "Official SHARPN BlackTurf site describes a Beijing athlete-style conditioning gym with standardized team-based strength, speed, agility and conditioning sessions on a black ATTACK turf floor. Sessions vary by focus while preserving shared structure and a 'Super Warm-up'.",
+      "target_members": "Fitness enthusiasts and beginners who want to train like athletes, with team energy and structured conditioning.",
+      "investment_modules": [
+        "Dedicated turf/functional movement training area",
+        "Standardized 60-minute group-training curriculum",
+        "TURF 101 beginner onboarding",
+        "Coach training, class standards and intensity scaling",
+        "Group rituals and post-class social connection"
+      ],
+      "service_mechanism": "Official site describes ~60-minute sessions including warm-up and cool-down, maximum one session per person per day, different daily focuses, consistent program standards and instructor delivery style. TURF 101 recommended for newcomers.",
+      "community_mechanism": "Teams train together, support each other, share opening/closing rituals and are encouraged to take post-class photos rather than use phones during class.",
+      "why_it_may_work": "Repeatable program architecture and strong rituals can create identity and social adherence; independently verified attendance and retention data are unavailable.",
+      "plus5lbs_takeaway": "Study the TURF 101 onboarding pathway and the balance of standardized programming with coach personality. Pilot an athlete-style group training line that complements rather than replaces serious strength training.",
+      "avoid_copying": "Do not copy extreme intensity or branding as a universal default. Verify current operating location and ensure progression, safety and beginner accessibility. Do not treat SHARPN MASS as the same format.",
+      "investment_decision": "Build standardized coaching and beginner progression; pilot turf-style group conditioning; verify location/operations before direct competitor comparison.",
+      "evidence_status": "High for historical brand identity and published program mechanics from official website; current operation, exact active venue and affiliation with MASS remain unverified.",
+      "sources": [
+        {
+          "label": "SHARPN BlackTurf official about (Chinese), accessed 2026-10-29",
+          "url": "https://www.sharpn-blackturf.com/about-cn"
+        },
+        {
+          "label": "SHARPN BlackTurf official contact page",
+          "url": "https://www.sharpn-blackturf.com/contact-cn"
+        }
+      ],
+      "last_verified": "2026-10-29"
+    },
+    {
+      "id": "spacecycle-mainland-historical-postmortem",
+      "brand": "Space / SpaceCycle (mainland China historical case)",
+      "city": "Beijing and Shanghai, China (historical mainland operations)",
+      "type": "Historical boutique fitness / music-led immersive classes / prepaid membership caution",
+      "core_model": "SpaceCycle built a premium class experience around cycling, music, lights, coach personality, studio quality and high-service changing rooms. Jiemian/Focus One reported mainland Beijing/Shanghai operations ceased from May 1, 2024 following liquidation notice, with member prepaid balances disputed. Official brand site is older and must not be read as current store evidence.",
+      "target_members": "Historically premium urban boutique-class consumers seeking immersive workouts, coach relationships, community and convenience.",
+      "investment_modules": [
+        "Music and instructor-led class experience",
+        "High-quality changing/shower/grooming amenities",
+        "Coach identity and recurring member relationships",
+        "Studio lighting and sound",
+        "Transparent prepaid service obligations and member trust"
+      ],
+      "service_mechanism": "Historically immersive classes, carefully serviced changing rooms and social waiting spaces. Reports of sudden closure and outstanding prepaid lessons make consumer trust and continuity central negative lessons.",
+      "community_mechanism": "Strong coach-led communities and social identity were reported by former members; some continued following coaches after closures.",
+      "why_it_may_work": "Strong atmosphere and personal instructor connection created perceived differentiation, but brand affinity did not prevent operating failure. Membership prepaid revenue cannot be treated as earned service value.",
+      "plus5lbs_takeaway": "Learn from coach culture, cleaning cadence, showers and between-class social comfort; separately design customer-funds protection, fulfillment obligations, refund transparency and continuity plans.",
+      "avoid_copying": "Do not copy aggressive prepaid selling, costly experiential build-out or dependence on star instructors without resilient service economics. Do not label mainland Space as currently operating.",
+      "investment_decision": "Build service quality and coach standards; selectively pilot immersive formats; establish prepaid liability governance; defer heavy sensory build-out.",
+      "evidence_status": "High for historical brand concept (official archived site); medium-high for 2024 mainland closure and member accounts (Jiemian/Focus One report); current status of any separate Taiwan operations not assessed.",
+      "sources": [
+        {
+          "label": "Jiemian / Focus One report on mainland Space closures, 2024",
+          "url": "https://www.jiemian.com/article/11167209.html"
+        },
+        {
+          "label": "SpaceCycle historical official brand page",
+          "url": "https://www.spacecycle.cn/brandInfo.html"
+        }
+      ],
+      "last_verified": "2026-10-29"
     }
   ],
   "investment_framework": [
@@ -393,6 +554,11 @@
     }
   ],
   "research_log": [
+    {
+      "date": "2026-10-29",
+      "title": "New Equinox and Third Space club evidence; Life Time digital integration; China reference identity and closure risks",
+      "summary": "Official Third Space Queen's Park now open: HYROX, Eleiko, Woodway, recovery, coach academy and membership tiers. Equinox Terminal Warehouse showroom open, club opening planned Nov 10. Life Time integrated DUPR ratings into app Oct 21. SHARPN BlackTurf official Beijing program verified (current operation unverified); mainland SpaceCycle closure reported in 2024. Distinguish operating vs planned, historical and unverified facts."
+    },
     {
       "date": "2026-10-27",
       "title": "Playbook upgraded to interactive bilingual workspace; historical case discussions consolidated",
