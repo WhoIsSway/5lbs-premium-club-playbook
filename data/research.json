@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-29",
-  "last_research_run": "2026-10-29",
-  "decision_note": "Material additions: Equinox Terminal Warehouse (showroom open, club planned Nov 10); Third Space Queen's Park (official now open, coach academy and detailed amenities); Life Time DUPR app integration; SHARPN BlackTurf official program identity with current operation pending; historical SpaceCycle mainland closure and prepaid-liability lessons. Avoid conflating planned/open and current/historical operating status.",
+  "updated_at": "2026-11-02",
+  "last_research_run": "2026-11-02",
+  "decision_note": "New verified research: Revive Madrid training+recovery tier design and runner rituals; Third Space Paternoster Strong 12-week progressive group product; Life Time LT Social social membership. Life Time Q3 2026 results add operator-level evidence that in-center services are a material revenue stream, without proving causation. Identity ambiguities for China references remain open. Website visual design unchanged.",
   "tracked_brands": [
     {
       "name": "Equinox",
@@ -21,7 +21,7 @@
     },
     {
       "name": "The Real Gym",
-      "scope": "Beijing Olympic Sports Center THE REAL GYM is a candidate based on public user content; exact intended reference and current services remain to verify",
+      "scope": "Beijing Olympic Sports Center THE REAL GYM is a candidate with 2026 user-generated equipment reporting; a separate Langyuan VINTAGE directory entry may refer to a different entity. Verify exact intended reference, official identity and current services before merging.",
       "status": "candidate_identity_needs_confirmation"
     },
     {
@@ -499,6 +499,113 @@
         }
       ],
       "last_verified": "2026-10-29"
+    },
+    {
+      "id": "revive-madrid-training-recovery-2026",
+      "brand": "Revive Wellness Hub",
+      "city": "Madrid, Spain — Justicia and Salamanca",
+      "type": "Boutique performance club / integrated recovery / running community",
+      "core_model": "Two Madrid locations under one membership combine coached small-group Strength, HYROX, Sculpt and S&C, Open Gym, sauna/cold/infrared recovery, running club and community events. The official membership page lists Foundation €169/month (8 classes + 4 recovery), Ritual €219/month (unlimited classes + 4 recovery), All In €269/month (unlimited classes + recovery) and Reset €199/month (recovery-focused); these are displayed monthly prices as checked 2026-11-02, not guaranteed ongoing rates.",
+      "target_members": "Urban training-oriented members, HYROX competitors, runners, and recovery-only customers who may already train elsewhere.",
+      "investment_modules": [
+        "Small-group progressive strength and HYROX",
+        "Coaches and structured programming",
+        "Sauna and cold immersion with safety procedures",
+        "Recovery booking and access tiers",
+        "Running Club twice weekly",
+        "Guest passes and events",
+        "Coffee partner and private changing rooms",
+        "Trial offer with first-month credit"
+      ],
+      "service_mechanism": "Official site offers a €69 7-day trial of 3 classes plus 1 recovery session, credited toward first membership month if joining; recovery-only 3-pack €79. Single membership across two sites, class and recovery booking, guest passes; compression at Justicia only. Website FAQ and membership page differ on legacy tier names, so current live membership page is preferred and should be rechecked.",
+      "community_mechanism": "Coach-led runs Tuesday and Thursday from Justicia with coffee afterward; HYROX competition trips, workshops and Recovery Social Club with scheduled group sauna/cold sessions. Public site says 500+ community members and 5.0 Google rating; these are brand claims, not independently audited.",
+      "why_it_may_work": "The entry offer lets prospects experience both training and recovery, while distinct class/recovery allowances create clear reasons to upgrade. Running and recovery rituals create repeat occasions and referrals; retention effect remains unproven.",
+      "plus5lbs_takeaway": "Pilot a 7-day Training+Recovery intro pass, 2–3 membership tiers defined by service allowances, and a coach-led running club with post-run recovery/social sessions. Measure trial-to-join, recovery utilization, coach capacity, repeat visits, and guest-to-member conversion.",
+      "avoid_copying": "Do not treat cold exposure or infrared claims as clinical proof; ensure safety and appropriate screening. Do not copy recovery inclusions before capacity and operating cost validation. Do not cite brand self-reported reviews as independent verification.",
+      "investment_decision": "Build coached training and run-club cadence; pilot limited recovery and membership credits; partner cafe/clinical services; defer advanced recovery technology until validated.",
+      "evidence_status": "High for currently published facilities, addresses and membership entitlements (official site checked 2026-11-02); medium for independently verified operations, member satisfaction and commercial outcomes.",
+      "sources": [
+        {
+          "label": "Revive official website, accessed 2026-11-02",
+          "url": "https://revivespain.com/en/"
+        },
+        {
+          "label": "Revive official membership tiers, accessed 2026-11-02",
+          "url": "https://revivespain.com/en/membresias/"
+        },
+        {
+          "label": "Revive official locations, accessed 2026-11-02",
+          "url": "https://revivespain.com/en/contact/"
+        }
+      ],
+      "last_verified": "2026-11-02"
+    },
+    {
+      "id": "third-space-paternoster-strong-2026",
+      "brand": "Third Space Paternoster Square — Strong",
+      "city": "London, UK — 31 Warwick Lane",
+      "type": "Luxury Health Club / progressive small-group strength",
+      "core_model": "Operating club launched in August 2026 with dedicated Strength & Conditioning Studio and 'Strong' progressive 12-week group training programme using barbells, cables and functional movements. Integrated gym, Reformer, recovery and wet spa.",
+      "target_members": "Urban professionals who want structured strength progression with luxury club hospitality and access to varied formats.",
+      "investment_modules": [
+        "Dedicated strength and conditioning studio",
+        "12-week progressive small-group curriculum",
+        "Barbell and cable training",
+        "Coach education and class standards",
+        "Recovery zone with Hyperice/Normatec",
+        "Premium changing and laundry service",
+        "Members lounge",
+        "Natural Fitness Food cafe"
+      ],
+      "service_mechanism": "12-week structured progressive classes within the club membership ecosystem; official site also documents premium changing amenities, rented lockers and optional laundry service.",
+      "community_mechanism": "Progressive cohorts can support shared goals and coach familiarity; this is a proposed interpretation, not an independently verified club cohort/retention mechanism.",
+      "why_it_may_work": "The programme sells continuity and visible progression, creating a training reason to return beyond one-off classes. Actual completion and retention are not publicly disclosed.",
+      "plus5lbs_takeaway": "Design a 12-week +5LBS Strength Progression product with initial assessment, consistent progression, week-6 review and week-12 retest. Pilot 6–10 members/coach before allocating a dedicated studio.",
+      "avoid_copying": "Do not assume a dedicated studio is necessary at launch; start with scheduled floor zones. Do not treat brand-listed recovery services as evidence of medical efficacy.",
+      "investment_decision": "Build progressive programming and coach standards; pilot cohort classes; defer separate studio until utilization validates it.",
+      "evidence_status": "High for open club and official Strong programme description (official club page, checked 2026-11-02); medium for 12-week mechanics (HCM report 2026-08-25); retention effects are analytical hypothesis.",
+      "sources": [
+        {
+          "label": "Third Space official Paternoster Square club and Strong programme, accessed 2026-11-02",
+          "url": "https://www.thirdspace.london/clubs/paternoster-square/"
+        },
+        {
+          "label": "Health Club Management report, 2026-08-25",
+          "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/Growth-continues-at-Third-Space-with-new-Paternoster-club/363481"
+        }
+      ],
+      "last_verified": "2026-11-02"
+    },
+    {
+      "id": "lifetime-lt-social-2026",
+      "brand": "Life Time — LT Social",
+      "city": "New York City launch; US city expansion planned",
+      "type": "Athletic Country Club / social membership / club-within-club",
+      "core_model": "Life Time introduced LT Social, an application-based social layer on top of its athletic club ecosystem, first showcased September 12–13 2026 at Life Time Sky in Manhattan. Programme combines curated social events, recovery, wellness and hospitality; application through the Life Time app was announced to open September 15.",
+      "target_members": "Existing Life Time members seeking curated social access, event priority and cross-interest relationships beyond exercise.",
+      "investment_modules": [
+        "Curated member event calendar",
+        "Member application and access rules",
+        "App-based event invitations",
+        "Social and hospitality programming",
+        "Existing rooftop/lounge as multi-use venue",
+        "Recovery and signature class pop-ups",
+        "Partner activations"
+      ],
+      "service_mechanism": "LT Social applications and event invitations through existing member app; editorial description lists exclusive calendar, priority registration and member-only experiences. Programme announced 2026-08-25, subsequent individual event delivery not independently verified.",
+      "community_mechanism": "The Social, The Reset and The Clubhouse event pillars combine evening gathering, daytime recovery, and social pool events; planned future city activations included Chicago, Miami and Phoenix.",
+      "why_it_may_work": "Uses existing premium spaces and member base to create a distinct social value layer without making every visitor buy more equipment. It may support engagement and member referrals, but no independent retention or LT Social revenue data is available.",
+      "plus5lbs_takeaway": "Test an invitation-based +5LBS Athletic Circle with quarterly curated events, runner/strength/fitness sub-communities, priority booking and guest privileges. Keep core training product first; evaluate attendance, cross-visit, referral and retention versus comparable members.",
+      "avoid_copying": "Do not assume high-production rooftop nightlife is necessary or compatible with +5LBS brand. Do not claim Life Time's operator-level revenue growth was caused by LT Social.",
+      "investment_decision": "Build member event programming and invitation mechanics; partner hospitality and brands; pilot selective premium experiences; defer standalone social-club buildout.",
+      "evidence_status": "High for official launch announcement and programme structure (Life Time editorial 2026-08-25); actual event operations and membership/retention outcomes not independently validated.",
+      "sources": [
+        {
+          "label": "Life Time official editorial, 2026-08-25",
+          "url": "https://experiencelife.lifetime.life/article/introducing-lt-social/"
+        }
+      ],
+      "last_verified": "2026-11-02"
     }
   ],
   "investment_framework": [
@@ -554,6 +661,21 @@
     }
   ],
   "research_log": [
+    {
+      "date": "2026-11-02",
+      "title": "China reference verification: THE REAL GYM and Space identity remain scoped",
+      "summary": "THE REAL GYM Beijing Olympic Sports Center has 2026 user-generated reporting of high-end imported equipment; a separate directory lists a THEREALGYM at Langyuan VINTAGE, potentially a different entity. Do not merge identities without primary confirmation. SPACE Taiwan official site still lists Mingyao flagship, which must not be conflated with mainland SpaceCycle 2024 closure. Sources: https://post.smzdm.com/p/al3ve3me/ ; https://www.withinspace.com/zh-tw/studio-intro/mingyao"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "Newly researched products: Revive Madrid, Third Space Strong, Life Time LT Social",
+      "summary": "Added 3 structured records: Revive's coached training + recovery tiers + running rituals; Third Space Paternoster's 12-week Strong progressive training product; Life Time's social membership within an athletic country club. Historical launch dates are explicitly distinguished from this verification date. No changes to website visual design."
+    },
+    {
+      "date": "2026-11-02",
+      "title": "Life Time Q3 2026 operator evidence: services and membership value",
+      "summary": "Official Oct 29 release: Q3 center revenue $871.127m; in-center revenue $249.026m (28.6% of center revenue), vs 28.1% in Q3 2025. Average quarterly center revenue per center membership $1,016 vs $907 (+12.0%). Company attributes growth partly to improved membership mix and higher utilization of in-center services, particularly Dynamic Personal Training. These are company-level signals, not causal proof for individual services or new LT Social programme. Source: https://ir.lifetime.life/news-events/press-releases/detail/1241/life-time-reports-third-quarter-2026-financial-results"
+    },
     {
       "date": "2026-10-29",
       "title": "New Equinox and Third Space club evidence; Life Time digital integration; China reference identity and closure risks",
