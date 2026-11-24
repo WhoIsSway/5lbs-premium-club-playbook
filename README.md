@@ -1,6 +1,6 @@
 # +5LBS Premium Club Playbook
 
-Living benchmark and concept research for the future +5LBS Premium Club.
+Living Research & Innovation Lab for +5LBS Standard, PLUS, Premium and the planned 1788 flagship formats.
 
 ## Live site
 
@@ -26,7 +26,19 @@ The workflow `.github/workflows/research-update.yml` is scheduled for Mondays an
 
 Without this secret, the workflow will still attempt to publish/validate the site but will skip automated research. ChatGPT's own scheduled task does not automatically write its conversation results to GitHub; the workflow is a separate pipeline.
 
-The update script validates required fields and HTTPS source links. If no substantive change is found, it leaves `data/research.json` unchanged and creates no content commit. When new evidence is found, it commits the structured research data and deploys the site in the same workflow run.
+The update script now fails visibly when `OPENAI_API_KEY` is missing; a repeated deployment can no longer masquerade as a successful research update. It validates Research Lab v2, required five-layer topic research, versioned conclusions, counter-evidence, executable experiments, duplicate identities and HTTPS sources. If no substantive learning delta exists, it leaves the database unchanged.
+
+## Research Lab v2
+
+Brand cases are evidence inputs, not the end product. Cross-brand topics must advance through:
+
+1. **WHAT** — verified facts.
+2. **HOW** — product and operating mechanism.
+3. **WHY** — causal hypothesis with evidence and counter-evidence.
+4. **WHAT IF** — clearly labelled cross-brand and cross-sport possibilities.
+5. **APPLICATION** — differentiated translation for Standard, PLUS, Premium and the planned 1788 flagship.
+
+Every topic carries a research question, versioned conclusion, open questions, evidence limits, learning delta and executable experiment card. The first deep topic is group-training productization, linking progressive programming, coach ownership, peer identity, community rituals and cross-sport pathways.
 
 ## Files
 
