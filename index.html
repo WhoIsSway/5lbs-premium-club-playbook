@@ -58,7 +58,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
 .side-label,.side-note{display:none}
 .nav{
   display:grid;
-  grid-template-columns:repeat(10,minmax(0,1fr));
+  grid-template-columns:repeat(11,minmax(0,1fr));
   min-width:1040px;
 }
 .nav a{
@@ -412,6 +412,23 @@ tr:last-child td{border-bottom:0}
   .journey-step b{margin-top:20px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.lab-method{display:grid;grid-template-columns:repeat(5,1fr);border-top:2px solid var(--ink);border-bottom:1px solid var(--ink)}
+.lab-layer{min-width:0;padding:22px 18px 24px 0;border-right:1px solid var(--line)}
+.lab-layer+.lab-layer{padding-left:18px}.lab-layer:last-child{border-right:0}
+.lab-layer b{display:block;margin-bottom:9px;font-size:11px;letter-spacing:.04em}.lab-layer p{margin:0;color:var(--muted);font-size:11px;line-height:1.65}
+.topic{margin-top:46px;border-top:2px solid var(--ink)}
+.topic-head{display:grid;grid-template-columns:.7fr 1.3fr;gap:40px;padding:28px 0;border-bottom:1px solid var(--ink)}
+.topic-head h3{margin:8px 0 12px;font-size:clamp(30px,4vw,52px);line-height:1;letter-spacing:-.05em}.topic-head p{margin:0;color:var(--muted)}
+.conclusion{padding:26px;background:var(--paper);border-left:4px solid var(--accent)}.conclusion strong{display:block;margin-bottom:10px;font-size:11px;letter-spacing:.08em}
+.five-layers{display:grid;grid-template-columns:repeat(5,1fr);border-bottom:1px solid var(--ink)}
+.layer-col{min-width:0;padding:24px 18px 28px 0;border-right:1px solid var(--line)}.layer-col+.layer-col{padding-left:18px}.layer-col:last-child{border-right:0}
+.layer-col h4{margin:0 0 16px;font-size:12px}.layer-col ul{margin:0;padding-left:16px}.layer-col li{margin:0 0 11px;color:#4b4b46;font-size:11px;line-height:1.65}
+.lab-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:32px}.lab-panel{padding-top:18px;border-top:1px solid var(--ink)}.lab-panel h4{margin:0 0 14px;font-size:13px}.lab-panel li{margin-bottom:9px;color:#4b4b46;font-size:12px}
+.format-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:28px;background:var(--ink);border:1px solid var(--ink)}.format-card{padding:22px;background:#fff}.format-card b{display:block;margin-bottom:10px}.format-card p{margin:0;color:var(--muted);font-size:11px}
+.experiment{margin-top:28px;padding:28px;border:1px solid var(--ink)}.experiment h4{margin:6px 0 12px;font-size:24px}.experiment p,.experiment li{font-size:12px}.learning-delta{display:grid;grid-template-columns:120px 1fr;gap:24px;padding:18px 0;border-top:1px solid var(--line)}.learning-delta time{font-size:11px;color:var(--accent)}
+@media(max-width:980px){.lab-method,.five-layers{grid-template-columns:1fr}.lab-layer,.layer-col{padding:18px 0!important;border-right:0;border-bottom:1px solid var(--line)}.topic-head,.lab-grid{grid-template-columns:1fr}.format-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.format-grid{grid-template-columns:1fr}.learning-delta{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -423,7 +440,8 @@ tr:last-child td{border-bottom:0}
 <a href="#framework"><span>01</span><b data-i18n="n1"></b></a>
 <a href="#global"><span>02</span><b data-i18n="n2"></b></a>
 <a href="#china"><span>03</span><b data-i18n="n3"></b></a>
-<a href="#library"><span>04</span><b data-i18n="n4"></b></a>
+<a href="#lab"><span>04</span><b>Lab</b></a>
+<a href="#library"><span>05</span><b data-i18n="n4"></b></a>
 <a href="#investment"><span>05</span><b data-i18n="n5"></b></a>
 <a href="#journey"><span>06</span><b data-i18n="n6"></b></a>
 <a href="#modules"><span>07</span><b data-i18n="n7"></b></a>
@@ -436,7 +454,7 @@ tr:last-child td{border-bottom:0}
 <div class="topbar">
 <div class="crumb">+5LBS <span style="color:#aaa">/</span> <span data-i18n="topline">Research workspace</span></div>
 <div class="top-actions">
-<div class="mobile-nav"><select id="mobileJump" aria-label="Navigate"><option value="#overview">Overview</option><option value="#framework">Framework</option><option value="#global">Global benchmarks</option><option value="#china">China benchmarks</option><option value="#library">Case library</option><option value="#investment">Investment</option><option value="#journey">Member journey</option><option value="#modules">Modules</option><option value="#evidence">Evidence</option><option value="#changelog">Changelog</option></select></div>
+<div class="mobile-nav"><select id="mobileJump" aria-label="Navigate"><option value="#overview">Overview</option><option value="#framework">Framework</option><option value="#global">Global benchmarks</option><option value="#china">China benchmarks</option><option value="#lab">Research lab</option><option value="#library">Case library</option><option value="#investment">Investment</option><option value="#journey">Member journey</option><option value="#modules">Modules</option><option value="#evidence">Evidence</option><option value="#changelog">Changelog</option></select></div>
 <button class="pill active" id="langZh">中文</button><button class="pill" id="langEn">EN</button>
 <a class="pill" href="https://github.com/WhoIsSway/5lbs-premium-club-playbook" target="_blank" rel="noopener">GitHub ↗</a>
 </div></div>
@@ -456,6 +474,7 @@ tr:last-child td{border-bottom:0}
 </section>
 <section class="section" id="global"><div class="section-head"><div><div class="eyebrow">02 / GLOBAL ANCHORS</div><h2 data-i18n="globalTitle">全球核心对标</h2></div><p data-i18n="globalSub">固定深化 Equinox、Third Space、Life Time；关注它们的系统能力，不只看装修。</p></div><div class="grid" id="globalGrid"></div></section>
 <section class="section" id="china"><div class="section-head"><div><div class="eyebrow">03 / CHINA REFERENCES</div><h2 data-i18n="chinaTitle">国内参考品牌</h2></div><p data-i18n="chinaSub">先核实具体品牌与门店，再将事实归档；SHARPN TURF 与 SHARPN MASS 分开研究。</p></div><div class="grid" id="chinaGrid"></div></section>
+<section class="section" id="lab"><div class="section-head"><div><div class="eyebrow">04 / RESEARCH &amp; INNOVATION LAB</div><h2 id="labTitle">专题研究与创新实验室</h2></div><p id="labSub">案例是证据，不是终点。每轮必须推进认知、修正结论或形成可验证实验。</p></div><div class="lab-method" id="labMethod"></div><div id="labTopics"></div><div style="margin-top:54px"><div class="section-head"><div><div class="eyebrow">LEARNING DELTA</div><h2 id="learningTitle">每轮新增学习</h2></div><p id="learningSub">记录新增、修正与无变化，避免用重复部署冒充研究更新。</p></div><div id="labLearning"></div></div></section>
 <section class="section" id="library"><div class="section-head"><div><div class="eyebrow">04 / CASE LIBRARY</div><h2 data-i18n="libraryTitle">全球案例库</h2></div><p data-i18n="librarySub">搜索、筛选并展开案例明细。来源链接、证据状态与投资判断随案例保存。</p></div>
 <div class="filters"><input id="searchBox" type="search" placeholder="搜索品牌、城市、模块、关键词…"><select id="typeFilter"><option value="">全部类型 / All types</option></select><select id="decisionFilter"><option value="">全部投资判断 / All decisions</option><option value="build">自建 / Build</option><option value="partner">合作 / Partner</option><option value="pilot">试点 / Pilot</option><option value="defer">暂缓 / Defer</option></select><select id="evidenceFilter"><option value="">全部证据状态 / All evidence</option><option value="high">较高 / High</option><option value="medium">中等 / Medium</option><option value="low">有限 / Limited</option><option value="verify">待核实 / Verify</option></select></div>
 <div class="count" id="resultCount"></div><div class="case-grid" id="caseGrid"></div><div id="emptyCases" class="empty hide" data-i18n="noResults">没有匹配的案例。可以调整筛选条件。</div>
@@ -544,9 +563,32 @@ var cs=allCases().filter(function(c){var text=[c.brand,c.city,c.type,c.core_mode
 document.getElementById("resultCount").textContent=(LANG==="zh"?"显示 ":"Showing ")+cs.length+(LANG==="zh"?" / ":" / ")+allCases().length+(LANG==="zh"?" 条案例":" cases");
 document.getElementById("emptyCases").classList.toggle("hide",cs.length>0);
 document.getElementById("caseGrid").innerHTML=cs.map(function(c){var src=list(c.sources).map(function(s){return '<a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.label||"Source")+' ↗</a>'}).join("");var mods=list(c.investment_modules).map(function(m){return '<span class="tag">'+esc(m)+'</span>'}).join("");return '<article class="case"><div class="case-top"><div class="micro">'+esc(c.type||"Case")+'</div><h3>'+esc(c.brand||c.id)+'</h3><div class="case-city">'+esc(c.city||"")+' · '+esc(c.last_verified||"")+'</div><div class="tagrow">'+statusTag(c)+'<span class="tag '+(decisionKey(c.investment_decision)==="build"?"green":decisionKey(c.investment_decision)==="defer"?"red":"amber")+'">'+esc(c.investment_decision||"Decision pending")+'</span></div><p>'+esc(c.core_model||"")+'</p></div><div class="case-body"><details><summary>'+esc(LANG==="zh"?"会员画像与核心模式":"Target member & model")+'</summary><div class="detail"><strong>'+esc(LANG==="zh"?"目标会员：":"Target members: ")+'</strong>'+esc(c.target_members||"—")+'</div></details><details><summary>'+esc(LANG==="zh"?"值得投入的模块":"Investment modules")+'</summary><div class="detail">'+mods+'</div></details><details><summary>'+esc(LANG==="zh"?"服务与社群机制":"Service & community")+'</summary><div class="detail"><strong>'+esc(LANG==="zh"?"服务机制：":"Service: ")+'</strong>'+esc(c.service_mechanism||"—")+'<br><strong>'+esc(LANG==="zh"?"社群机制：":"Community: ")+'</strong>'+esc(c.community_mechanism||"—")+'</div></details><details><summary>'+esc(LANG==="zh"?"为什么有效 / +5LBS 借鉴":"Why it works / +5LBS takeaway")+'</summary><div class="detail"><strong>'+esc(LANG==="zh"?"价值逻辑：":"Value logic: ")+'</strong>'+esc(c.why_it_may_work||"—")+'<br><strong>+5LBS：</strong>'+esc(c.plus5lbs_takeaway||"—")+'<br><strong>'+esc(LANG==="zh"?"不应照搬：":"Avoid copying: ")+'</strong>'+esc(c.avoid_copying||"—")+'</div></details><details><summary>'+esc(LANG==="zh"?"来源与证据状态":"Sources & evidence")+'</summary><div class="detail">'+esc(c.evidence_status||"Evidence status not recorded")+'<div class="sources">'+(src||"—")+'</div></div></details></div></article>'}).join("")}
+
+function tx(o,zh,en){return o&&(o[LANG==="zh"?zh:en]||o[zh]||o[en])||""}
+function renderLab(){var lab=DATA&&DATA.research_lab;if(!lab){document.getElementById("labTopics").innerHTML='<div class="empty">Research Lab data unavailable.</div>';return}
+document.getElementById("labTitle").textContent=LANG==="zh"?"专题研究与创新实验室":"Research & Innovation Lab";
+document.getElementById("labSub").textContent=LANG==="zh"?"案例是证据，不是终点。每轮必须推进认知、修正结论或形成可验证实验。":"Cases are evidence, not the endpoint. Every run must advance knowledge, revise a conclusion or produce a testable experiment.";
+document.getElementById("learningTitle").textContent=LANG==="zh"?"每轮新增学习":"Learning delta by run";
+document.getElementById("learningSub").textContent=LANG==="zh"?"记录新增、修正与无变化，避免用重复部署冒充研究更新。":"Record additions, corrections and explicit no-change; never confuse a redeploy with research.";
+document.getElementById("labMethod").innerHTML=list(lab.methodology&&lab.methodology.layers).map(function(x){return '<div class="lab-layer"><b>'+esc(tx(x,"label_zh","label_en"))+'</b><p>'+esc(tx(x,"rule_zh","rule_en"))+'</p></div>'}).join("");
+document.getElementById("labTopics").innerHTML=list(lab.topics).map(function(t){var layers=t.layers||{},c=t.conclusion||{},ev=t.evidence||{};
+function bullet(items,fn){return '<ul>'+list(items).map(function(x){return '<li>'+esc(fn(x))+'</li>'}).join("")+'</ul>'}
+var what=bullet(layers.what,function(x){return tx(x,"claim_zh","claim_en")});
+var how=bullet(layers.how,function(x){return tx(x,"zh","en")});
+var why=bullet(layers.why,function(x){return tx(x,"hypothesis_zh","hypothesis_en")+" — "+(LANG==="zh"?"反证/限制：":"Counter/limit: ")+list(x.counter).join("；")});
+var wi=bullet(layers.what_if,function(x){return tx(x,"zh","en")});
+var app=bullet(layers.application,function(x){return tx(x,"name_zh","name_en")+"："+tx(x,"model_zh","model_en")});
+var formats='<div class="format-grid">'+list(layers.application).map(function(x){return '<div class="format-card"><b>'+esc(tx(x,"name_zh","name_en"))+'</b><p>'+esc(tx(x,"model_zh","model_en"))+'</p><p style="margin-top:12px"><strong>KPI:</strong> '+esc(x.primary_metric||"—")+'<br><strong>Guardrail:</strong> '+esc(x.guardrail||"—")+'</p></div>'}).join("")+'</div>';
+var questions=bullet(t.open_questions,function(x){return tx(x,"zh","en")+" ["+(x.status||"open")+"]"});
+var counter=bullet(LANG==="zh"?ev.counter_evidence_zh:ev.counter_evidence_en,function(x){return x});
+var experiments=list(t.experiments).map(function(x){return '<div class="experiment"><div class="micro">'+esc(x.status||"experiment")+' · '+esc(x.duration||"")+'</div><h4>'+esc(tx(x,"title_zh","title_en"))+'</h4><p><strong>'+(LANG==="zh"?"对象：":"Audience: ")+'</strong>'+esc(tx(x,"audience_zh","audience_en"))+' · '+esc(x.cohort_size||"")+'</p>'+bullet(LANG==="zh"?x.steps_zh:x.steps_en,function(v){return v})+'<p><strong>'+(LANG==="zh"?"成功指标：":"Success: ")+'</strong>'+esc(list(x.success_metrics).join(" · "))+'</p><p><strong>'+(LANG==="zh"?"护栏：":"Guardrails: ")+'</strong>'+esc(list(x.guardrails).join(" · "))+'</p><p><strong>'+(LANG==="zh"?"决策规则：":"Decision rule: ")+'</strong>'+esc(tx(x,"decision_rule_zh","decision_rule_en"))+'</p></div>'}).join("");
+return '<article class="topic"><div class="topic-head"><div><div class="micro">'+esc(list(t.tags).join(" / "))+'</div><h3>'+esc(tx(t,"title_zh","title_en"))+'</h3><p>'+esc(tx(t,"research_question_zh","research_question_en"))+'</p></div><div class="conclusion"><strong>'+esc((LANG==="zh"?"结论版本 ":"Conclusion ")+(c.version||"")+" · "+(c.date||"")+" · "+(c.status||""))+'</strong>'+esc(tx(c,"zh","en"))+'</div></div><div class="five-layers"><div class="layer-col"><h4>WHAT</h4>'+what+'</div><div class="layer-col"><h4>HOW</h4>'+how+'</div><div class="layer-col"><h4>WHY</h4>'+why+'</div><div class="layer-col"><h4>WHAT IF</h4>'+wi+'</div><div class="layer-col"><h4>APPLICATION</h4>'+app+'</div></div><div class="lab-grid"><div class="lab-panel"><h4>'+(LANG==="zh"?"反证与证据限制":"Counter-evidence & limits")+'</h4>'+counter+'</div><div class="lab-panel"><h4>'+(LANG==="zh"?"开放研究问题":"Open research questions")+'</h4>'+questions+'</div></div>'+formats+experiments+'</article>'}).join("");
+document.getElementById("labLearning").innerHTML=list(lab.learning_log).map(function(x){var added=LANG==="zh"?x.added_zh:x.added_en,corrected=LANG==="zh"?x.corrected_zh:x.corrected_en,nochange=LANG==="zh"?x.no_change_zh:x.no_change_en;return '<div class="learning-delta"><time>'+esc(x.date||"")+'<br>'+esc(x.delta_type||"")+'</time><div>'+(list(added).length?'<strong>'+(LANG==="zh"?"新增":"Added")+'</strong>'+bullet(added,function(v){return v}):"")+(list(corrected).length?'<strong>'+(LANG==="zh"?"修正":"Corrected")+'</strong>'+bullet(corrected,function(v){return v}):"")+(list(nochange).length?'<strong>'+(LANG==="zh"?"无变化":"No change")+'</strong>'+bullet(nochange,function(v){return v}):"")+'</div></div>'}).join("")||'<div class="empty">No learning deltas.</div>'
+}
+
 function renderEvidence(){document.querySelector("#evidenceTable tbody").innerHTML=evidenceRows.map(function(r){return "<tr><td><strong>"+esc(r[0])+"</strong></td><td>"+esc(LANG==="zh"?r[1]:r[1])+"</td><td>"+esc(LANG==="zh"?r[2]:r[2])+"</td><td>"+esc(r[3])+"</td></tr>"}).join("")}
 function renderLogs(){var logs=DATA&&Array.isArray(DATA.research_log)?DATA.research_log:[];document.getElementById("logs").innerHTML=logs.map(function(l){return '<div class="log"><time>'+esc(l.date||"")+'</time><div><h3>'+esc(l.title||"Research update")+'</h3><p>'+esc(l.summary||"")+'</p></div></div>'}).join("")||'<div class="empty">No research log entries.</div>';document.getElementById("sideStatus").innerHTML='<strong>'+esc(LANG==="zh"?"数据库更新":"Database updated")+'</strong><br>'+esc(DATA.updated_at||"—")+'<br><br>'+esc(LANG==="zh"?"最近研究运行":"Last research run")+': '+esc(DATA.last_research_run||"—")+'<br><br><a style="color:#fff" href="https://github.com/WhoIsSway/5lbs-premium-club-playbook/actions" target="_blank" rel="noopener">'+esc(LANG==="zh"?"查看自动化运行记录 ↗":"View workflow runs ↗")+'</a>';document.getElementById("footerDate").textContent=(LANG==="zh"?"数据库时间戳：":"Data timestamp: ")+(DATA.updated_at||"—")}
-function render(){document.querySelectorAll("[data-i18n]").forEach(function(el){var k=el.getAttribute("data-i18n");if(I18N[LANG][k])el.innerHTML=I18N[LANG][k]});renderGlobals();renderChina();renderModules();renderJourney();renderEvidence();renderLogs();fillTypeFilter();renderCases();document.getElementById("langZh").classList.toggle("active",LANG==="zh");document.getElementById("langEn").classList.toggle("active",LANG==="en");document.documentElement.lang=LANG==="zh"?"zh-CN":"en"}
+function render(){document.querySelectorAll("[data-i18n]").forEach(function(el){var k=el.getAttribute("data-i18n");if(I18N[LANG][k])el.innerHTML=I18N[LANG][k]});renderGlobals();renderChina();renderModules();renderJourney();renderEvidence();renderLab();renderLogs();fillTypeFilter();renderCases();document.getElementById("langZh").classList.toggle("active",LANG==="zh");document.getElementById("langEn").classList.toggle("active",LANG==="en");document.documentElement.lang=LANG==="zh"?"zh-CN":"en"}
 async function init(){try{var r=await fetch("./data/research.json?ts="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error("HTTP "+r.status);DATA=await r.json()}catch(e){DATA={updated_at:"unavailable",last_research_run:"unavailable",cases:[],research_log:[]};document.getElementById("sideStatus").textContent="Could not load data/research.json. Check deployment artifact root."}document.getElementById("caseCount").textContent=allCases().length;document.getElementById("brandCount").textContent=(DATA.tracked_brands||[]).length;document.getElementById("updatedDate").textContent=DATA.updated_at||"—";render()}
 document.getElementById("langZh").addEventListener("click",function(){LANG="zh";render()});document.getElementById("langEn").addEventListener("click",function(){LANG="en";render()});
 ["searchBox","typeFilter","decisionFilter","evidenceFilter"].forEach(function(id){document.getElementById(id).addEventListener("input",renderCases);document.getElementById(id).addEventListener("change",renderCases)});
