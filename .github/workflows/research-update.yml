@@ -1,8 +1,8 @@
-name: Research Radar and Publish
+name: Research Lab Update and Publish
 
 on:
   schedule:
-    # 09:17 China Standard Time on Monday and Thursday (01:17 UTC)
+    # 09:17 China Standard Time on Monday and Thursday (01:17 UTC).
     - cron: "17 1 * * 1,4"
   workflow_dispatch:
 
@@ -12,13 +12,13 @@ permissions:
   id-token: write
 
 concurrency:
-  group: premium-club-pages
-  cancel-in-progress: true
+  group: premium-club-research-lab
+  cancel-in-progress: false
 
 jobs:
   research-and-publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -29,28 +29,46 @@ jobs:
           ref: main
           fetch-depth: 0
 
+      - name: Require research credentials
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [[ -z "$OPENAI_API_KEY" ]]; then
+            echo "::error::OPENAI_API_KEY is not configured. Research did not run and the old site will not be republished as a false update."
+            exit 1
+          fi
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Research update (requires OPENAI_API_KEY secret)
+      - name: Run research lab update
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_RESEARCH_MODEL: gpt-4.1
         run: python scripts/update_research.py
 
-      - name: Commit substantive research changes only
+      - name: Validate research delta
+        id: delta
         run: |
           if [[ -n "$(git status --porcelain data/research.json)" ]]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/research.json
-            git commit -m "Update premium club research radar"
-            git push origin HEAD:main
+            python -m json.tool data/research.json >/dev/null
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           else
-            echo "No research data changes; no content commit created."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No substantive research change. No commit and no false update timestamp."
           fi
+
+      - name: Commit substantive research changes
+        if: steps.delta.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/research.json
+          git commit -m "Update research lab learning and experiments"
+          git pull --rebase origin main
+          git push origin HEAD:main
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
@@ -66,8 +84,7 @@ jobs:
 
       - name: Deployment summary
         run: |
-          echo "### +5LBS Premium Club Playbook" >> "$GITHUB_STEP_SUMMARY"
-          echo "- Site deployment completed by this workflow." >> "$GITHUB_STEP_SUMMARY"
-          echo "- Automated research runs only when the OPENAI_API_KEY repository secret is configured." >> "$GITHUB_STEP_SUMMARY"
-          echo "- If no source-backed substantive change is found, the research database is left unchanged." >> "$GITHUB_STEP_SUMMARY"
+          echo "### +5LBS Research & Innovation Lab" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Research credential check: passed." >> "$GITHUB_STEP_SUMMARY"
+          echo "- Substantive data change: ${{ steps.delta.outputs.changed }}." >> "$GITHUB_STEP_SUMMARY"
           echo "- Published URL: ${{ steps.deployment.outputs.page_url }}" >> "$GITHUB_STEP_SUMMARY"
