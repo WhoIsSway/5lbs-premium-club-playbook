@@ -1,8 +1,8 @@
 {
-  "schema_version": "1.0",
-  "updated_at": "2026-11-02",
+  "schema_version": "2.0",
+  "updated_at": "2026-11-24",
   "last_research_run": "2026-11-02",
-  "decision_note": "New verified research: Revive Madrid training+recovery tier design and runner rituals; Third Space Paternoster Strong 12-week progressive group product; Life Time LT Social social membership. Life Time Q3 2026 results add operator-level evidence that in-center services are a material revenue stream, without proving causation. Identity ambiguities for China references remain open. Website visual design unchanged.",
+  "decision_note": "Research Lab v2 launched: cases now feed cross-brand topic research, versioned conclusions, counter-evidence, store-format applications, learning deltas and executable experiments. First deep dive: group training productization.",
   "tracked_brands": [
     {
       "name": "Equinox",
@@ -662,6 +662,11 @@
   ],
   "research_log": [
     {
+      "date": "2026-11-24",
+      "title": "Research & Innovation Lab v2 launched",
+      "summary": "Added cross-brand topic research, WHAT/HOW/WHY/WHAT IF/APPLICATION layers, evidence and counter-evidence, versioned conclusions, learning deltas, store-format applications and an executable group-training pilot. Audit confirmed scheduled runs had no OPENAI_API_KEY and therefore redeployed old content without research writes."
+    },
+    {
       "date": "2026-11-02",
       "title": "China reference verification: THE REAL GYM and Space identity remain scoped",
       "summary": "THE REAL GYM Beijing Olympic Sports Center has 2026 user-generated reporting of high-end imported equipment; a separate directory lists a THEREALGYM at Langyuan VINTAGE, potentially a different entity. Do not merge identities without primary confirmation. SPACE Taiwan official site still lists Mingyao flagship, which must not be conflated with mainland SpaceCycle 2024 closure. Sources: https://post.smzdm.com/p/al3ve3me/ ; https://www.withinspace.com/zh-tw/studio-intro/mingyao"
@@ -696,5 +701,319 @@
       "title": "Structured research baseline created",
       "summary": "Separated core tracking list, initial adjacent-model references and investment decision framework from static page code. Automatic research ingestion requires OPENAI_API_KEY repository secret."
     }
-  ]
+  ],
+  "research_lab": {
+    "methodology": {
+      "layers": [
+        {
+          "key": "what",
+          "label_zh": "WHAT｜发现",
+          "label_en": "WHAT | Observed facts",
+          "rule_zh": "只记录可核验的产品、流程、空间、价格或行为。",
+          "rule_en": "Record only verifiable products, flows, spaces, prices or behaviors."
+        },
+        {
+          "key": "how",
+          "label_zh": "HOW｜机制",
+          "label_en": "HOW | Mechanism",
+          "rule_zh": "拆解课程结构、教练动作、进阶、预约与社群组织。",
+          "rule_en": "Decompose programming, coaching, progression, booking and community operations."
+        },
+        {
+          "key": "why",
+          "label_zh": "WHY｜解释",
+          "label_en": "WHY | Explanation",
+          "rule_zh": "提出因果假设，并同时列出支持证据与反证。",
+          "rule_en": "State causal hypotheses with supporting and counter-evidence."
+        },
+        {
+          "key": "what_if",
+          "label_zh": "WHAT IF｜发散",
+          "label_en": "WHAT IF | Possibilities",
+          "rule_zh": "跨品牌、跨运动组合，但明确标记为推演。",
+          "rule_en": "Combine brands and sports while labeling ideas as hypotheses."
+        },
+        {
+          "key": "application",
+          "label_zh": "APPLICATION｜落地",
+          "label_en": "APPLICATION | Application",
+          "rule_zh": "按标准店、PLUS、尊享店、1788待开业旗舰店分别转译。",
+          "rule_en": "Translate separately for Standard, PLUS, Premium and planned 1788 flagship formats."
+        }
+      ],
+      "evidence_rules_zh": [
+        "品牌官方事实不等于经营结果",
+        "用户评价可提示问题但不能证明因果",
+        "没有实测数据时结论必须标记为假设",
+        "每轮必须记录新增、修正或无变化"
+      ],
+      "evidence_rules_en": [
+        "Official brand claims are not operating outcomes",
+        "Member reviews can signal issues but do not prove causality",
+        "Conclusions without measured outcomes remain hypotheses",
+        "Every run records a delta, correction or explicit no-change"
+      ]
+    },
+    "topics": [
+      {
+        "id": "group-training-productization-v1",
+        "priority": 1,
+        "title_zh": "团课产品化：从排课到可进阶的训练产品",
+        "title_en": "Group Training Productization: From Timetable to Progressive Product",
+        "tags": [
+          "团课产品化",
+          "教练机制",
+          "训练进阶",
+          "社群",
+          "跨运动"
+        ],
+        "linked_case_ids": [
+          "third-space-paternoster-strong-2026",
+          "revive-madrid-training-recovery-2026",
+          "goldfinger-track-club-nyc-2026",
+          "lifetime-dupr-digital-member-product-2026",
+          "lifetime-lt-social-2026"
+        ],
+        "research_question_zh": "什么机制能让团课同时提高训练结果、固定到店节奏、教练关系与会员归属，而不依赖不断增加课量？",
+        "research_question_en": "Which mechanisms let group training improve outcomes, visit rhythm, coach relationships and belonging without simply adding more classes?",
+        "conclusion": {
+          "version": "v1.0",
+          "date": "2026-11-24",
+          "status": "working_hypothesis",
+          "zh": "最值得复制的不是更多课程，而是“固定周期 + 明确进阶 + 教练反馈 + 同伴身份 + 跨运动出口”的产品链。第三空间 Strong 提供周期与进阶证据；Revive 展示训练、恢复与跑团仪式的组合；Goldfinger 展示固定训练与身份；Life Time 展示能力分层和社交层。尚无公开证据证明这些机制必然提升续费，因此应通过小规模队列实验验证。",
+          "en": "The transferable pattern is not more classes but a chain of fixed cycles, visible progression, coach feedback, peer identity and cross-sport pathways. Third Space Strong evidences progression; Revive combines training, recovery and run rituals; Goldfinger shows recurring practice and identity; Life Time demonstrates ability matching and a social layer. Public evidence does not prove retention impact, so the model requires a controlled pilot."
+        },
+        "layers": {
+          "what": [
+            {
+              "claim_zh": "Third Space Strong 是 12 周渐进式小团体力量产品。",
+              "claim_en": "Third Space Strong is a 12-week progressive small-group strength product.",
+              "case_id": "third-space-paternoster-strong-2026",
+              "evidence": "official_and_trade_reporting"
+            },
+            {
+              "claim_zh": "Revive 以训练次数、恢复权益、跑团和社群活动组成分层会员产品。",
+              "claim_en": "Revive tiers training, recovery, run club and community rituals.",
+              "case_id": "revive-madrid-training-recovery-2026",
+              "evidence": "official"
+            },
+            {
+              "claim_zh": "Goldfinger 以每周固定训练、赛事与会员身份组织跑者。",
+              "claim_en": "Goldfinger organizes runners through recurring sessions, races and membership identity.",
+              "case_id": "goldfinger-track-club-nyc-2026",
+              "evidence": "official"
+            }
+          ],
+          "how": [
+            {
+              "zh": "用 4–12 周队列代替无终点的散课；首测、周中反馈、结营复测构成闭环。",
+              "en": "Use 4–12 week cohorts instead of endless drop-ins, with baseline, mid-cycle feedback and retest."
+            },
+            {
+              "zh": "教练拥有固定队列，职责从授课扩展到评估、记录、匹配训练伙伴和下一周期建议。",
+              "en": "Give coaches stable cohorts and responsibility for assessment, tracking, peer matching and next-cycle recommendations."
+            },
+            {
+              "zh": "建立 Foundation → Build → Perform 进阶路径，并保留公开体验课作为入口。",
+              "en": "Create a Foundation → Build → Perform progression path with open classes as acquisition."
+            }
+          ],
+          "why": [
+            {
+              "hypothesis_zh": "固定周期可能降低选择成本，并让会员感知进步。",
+              "hypothesis_en": "Fixed cycles may reduce choice friction and make progress visible.",
+              "support": [
+                "third-space-paternoster-strong-2026"
+              ],
+              "counter": [
+                "公开资料未披露完成率或续费提升"
+              ]
+            },
+            {
+              "hypothesis_zh": "固定教练与同伴可能增强承诺和归属。",
+              "hypothesis_en": "Stable coaches and peers may strengthen commitment and belonging.",
+              "support": [
+                "goldfinger-track-club-nyc-2026",
+                "lifetime-lt-social-2026"
+              ],
+              "counter": [
+                "社交偏好因人而异，强制分组可能劝退部分会员"
+              ]
+            },
+            {
+              "hypothesis_zh": "训练与跑步、恢复等跨运动出口可增加使用场景。",
+              "hypothesis_en": "Cross-sport pathways into running and recovery may expand use occasions.",
+              "support": [
+                "revive-madrid-training-recovery-2026",
+                "lifetime-dupr-digital-member-product-2026"
+              ],
+              "counter": [
+                "模块过多会增加教练负荷与运营复杂度"
+              ]
+            }
+          ],
+          "what_if": [
+            {
+              "zh": "Runner's Strength：店内力量进阶 + 店外跑团 + 回店恢复与复盘。",
+              "en": "Runner's Strength: in-club progression, outdoor run club, return-to-club recovery and review."
+            },
+            {
+              "zh": "Hybrid Club：力量、体能与团队挑战组成 6 周赛季，不直接复制赛事品牌。",
+              "en": "Hybrid Club: a six-week strength, conditioning and team challenge season without copying event IP."
+            },
+            {
+              "zh": "Coach Guild：教练跨店共研课程，每月用一项动作标准和会员反馈修订教案。",
+              "en": "Coach Guild: cross-club curriculum review, revising one movement standard and lesson from member feedback monthly."
+            }
+          ],
+          "application": [
+            {
+              "format": "standard",
+              "name_zh": "标准店",
+              "name_en": "Standard",
+              "model_zh": "每周 1 个固定社群课 + 4 周 Foundation；利用现有训练区，不新增专用教室。",
+              "model_en": "One weekly ritual plus a four-week Foundation cohort using the existing floor.",
+              "primary_metric": "D30 repeat participation",
+              "guardrail": "coach load / safety"
+            },
+            {
+              "format": "plus",
+              "name_zh": "PLUS",
+              "name_en": "PLUS",
+              "model_zh": "Foundation / Build / Perform 三层路径，增加小团体付费计划与训练记录。",
+              "model_en": "Foundation / Build / Perform pathway with paid small-group programs and progress tracking.",
+              "primary_metric": "cohort completion and next-cycle conversion",
+              "guardrail": "class quality consistency"
+            },
+            {
+              "format": "premium",
+              "name_zh": "尊享店",
+              "name_en": "Premium",
+              "model_zh": "签名课程 + 固定教练队列 + 恢复与会员社交延伸，强调服务密度而非课量。",
+              "model_en": "Signature classes, stable coach cohorts, recovery and social extensions; prioritize service depth over volume.",
+              "primary_metric": "repeat visits and referral",
+              "guardrail": "privacy / over-servicing"
+            },
+            {
+              "format": "flagship_1788",
+              "name_zh": "1788待开业旗舰店",
+              "name_en": "Planned 1788 Flagship",
+              "model_zh": "开业前用 2 个 6 周创始会员赛季验证；成熟后再设置专用空间与跨运动品牌合作。",
+              "model_en": "Validate with two six-week founding-member seasons before dedicated space or cross-sport partnerships.",
+              "primary_metric": "trial-to-member and cohort retention",
+              "guardrail": "pre-opening promise vs delivered capacity"
+            }
+          ]
+        },
+        "evidence": {
+          "supporting_case_ids": [
+            "third-space-paternoster-strong-2026",
+            "revive-madrid-training-recovery-2026",
+            "goldfinger-track-club-nyc-2026",
+            "lifetime-dupr-digital-member-product-2026"
+          ],
+          "counter_evidence_zh": [
+            "现有来源多为品牌官方资料，缺少公开的完成率、留存和单位经济数据。",
+            "大型专用团课空间未必适合所有店型。",
+            "能力分层若标签化或门槛过高，可能损害新手体验。"
+          ],
+          "counter_evidence_en": [
+            "Most sources are brand-owned and lack completion, retention and unit-economics data.",
+            "Dedicated studios may not fit every format.",
+            "Ability tiers can harm beginner experience if they become labels or barriers."
+          ]
+        },
+        "open_questions": [
+          {
+            "id": "gt-q1",
+            "zh": "4 周与 8–12 周产品，哪种对首次会员更合适？",
+            "en": "Are four-week or 8–12 week programs better for first-time members?",
+            "status": "open"
+          },
+          {
+            "id": "gt-q2",
+            "zh": "固定教练队列能否提高二访和下一周期转化？",
+            "en": "Do stable coach cohorts improve second visits and next-cycle conversion?",
+            "status": "open"
+          },
+          {
+            "id": "gt-q3",
+            "zh": "跨运动出口应从跑步、HYROX式体能还是户外开始？",
+            "en": "Should the first cross-sport pathway be running, hybrid conditioning or outdoors?",
+            "status": "open"
+          }
+        ],
+        "experiments": [
+          {
+            "id": "exp-gt-01",
+            "title_zh": "THE +5 PROGRAM｜4 周团课产品化试点",
+            "title_en": "THE +5 PROGRAM | Four-week product pilot",
+            "status": "ready_to_pilot",
+            "formats": [
+              "standard",
+              "plus",
+              "premium",
+              "flagship_1788"
+            ],
+            "audience_zh": "首次参与团课或缺乏稳定训练节奏的会员",
+            "audience_en": "Members new to group training or without a stable rhythm",
+            "duration": "4 weeks",
+            "cohort_size": "6–10 per coach",
+            "steps_zh": [
+              "Week 0：动作与目标基线",
+              "Week 1–3：固定教练、同伴和渐进训练",
+              "Week 2：一次 5 分钟个人反馈",
+              "Week 4：复测、成果回顾和下一周期建议"
+            ],
+            "steps_en": [
+              "Week 0: movement and goal baseline",
+              "Weeks 1–3: stable coach, peers and progression",
+              "Week 2: five-minute personal feedback",
+              "Week 4: retest, review and next-cycle recommendation"
+            ],
+            "success_metrics": [
+              "attendance >= 75%",
+              "week-4 completion",
+              "next-cycle conversion",
+              "D30 repeat participation"
+            ],
+            "guardrails": [
+              "coach hours per participant",
+              "injury/safety events",
+              "complaints",
+              "beginner confidence"
+            ],
+            "decision_rule_zh": "完成率和下一周期转化均达到门店基线以上，且教练负荷可控，才扩大课次或设置专用空间。",
+            "decision_rule_en": "Expand slots or dedicated space only if completion and next-cycle conversion beat baseline without unacceptable coach load."
+          }
+        ]
+      }
+    ],
+    "learning_log": [
+      {
+        "date": "2026-11-24",
+        "run_id": "manual-upgrade-v2",
+        "topic_id": "group-training-productization-v1",
+        "delta_type": "new_synthesis",
+        "added_zh": [
+          "将案例从品牌卡片关联到跨品牌专题",
+          "建立五层研究、证据与反证、结论版本和实验卡",
+          "按四种店型给出差异化落地"
+        ],
+        "added_en": [
+          "Linked case cards into cross-brand topic research",
+          "Added five-layer research, evidence/counter-evidence, versioned conclusions and experiments",
+          "Differentiated applications across four store formats"
+        ],
+        "corrected_zh": [
+          "确认此前定时任务因缺少 OPENAI_API_KEY 而跳过研究，仅重复部署旧站"
+        ],
+        "corrected_en": [
+          "Confirmed prior schedules skipped research because OPENAI_API_KEY was absent and only redeployed old content"
+        ],
+        "no_change_zh": [],
+        "no_change_en": []
+      }
+    ]
+  }
 }
